@@ -1,7 +1,54 @@
 # Portfolio Template Editable
 
 A GitHub Pages portfolio with a live browser editor. It starts with neutral example content and a placeholder avatar. Replace the examples with your own details through the editor.
+I used **Git**, which uploads your project files to a GitHub repository. Your folder already had a Git history, so I only needed to push it.
 
+Next time, open **PowerShell** and follow these steps.
+
+**1. Go to your folder**
+
+```powershell
+cd "C:\Uzair\Portfolio"
+```
+
+**2. Prepare your updated files**
+
+```powershell
+git add .
+git commit -m "Update portfolio"
+```
+
+`git add .` selects the changes, and `git commit` saves a local version of them.
+
+**3. Upload to GitHub**
+
+```powershell
+git push https://github.com/mohammeduzairullah/Portfoilo.git HEAD:main
+```
+
+Sign in to GitHub if prompted. This is the upload command I used. The repository name is spelled **`Portfoilo`**, so keep that spelling in the command.
+
+For a **brand-new folder**, first create an empty repository on GitHub, then run:
+
+```powershell
+cd "C:\path\to\your\folder"
+git init
+git add .
+git commit -m "Initial upload"
+git branch -M main
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git push -u origin main
+```
+
+After that initial setup, future uploads need only:
+
+```powershell
+git add .
+git commit -m "Describe your changes"
+git push
+```
+
+Before using `git add .`, make sure passwords, tokens, and private files are excluded through a `.gitignore` file.
 ## Make your own copy
 
 1. Choose **Use this template → Create a new repository** on GitHub.
