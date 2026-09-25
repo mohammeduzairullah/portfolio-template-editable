@@ -23,7 +23,7 @@ git commit -m "Update portfolio"
 **3. Upload to GitHub**
 
 ```powershell
-git push https://github.com/mohammeduzairullah/Portfoilo.git HEAD:main
+git push https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git HEAD:main
 ```
 
 Sign in to GitHub if prompted. This is the upload command I used. The repository name is spelled **`Portfoilo`**, so keep that spelling in the command.
